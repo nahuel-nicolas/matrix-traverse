@@ -1,0 +1,206 @@
+/* Reset */
+*, *:focus, *:hover {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  border-image: none;
+}
+
+/* containers */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  background-color: green;
+}
+#header-content .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 17px;
+}
+#header-content .container #traverse-type span {
+  display: block;
+}
+#header-content .container #traverse-type button {
+  display: none;
+  cursor: pointer;
+}
+#header-content .container ul {
+  display: flex;
+}
+#header-content .container ul .option-button {
+  font-size: inherit;
+  color: #d1cfcf;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 7%;
+  cursor: pointer;
+}
+#header-content .container ul .current {
+  background-color: #025202;
+  color: white;
+  cursor: auto;
+}
+#header-content .container ul .option-button:hover {
+  background-color: #025202;
+}
+
+:root {
+  --transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 800px) {
+  #header-content .container #traverse-type {
+    display: flex;
+    align-items: center;
+  }
+  #header-content .container #traverse-type button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #025202;
+    color: white;
+    border-radius: 7%;
+    padding: 5px 10px;
+    margin: 0;
+    margin-left: 5px;
+    font-size: inherit;
+  }
+  #header-content .container #traverse-type button span {
+    margin-right: 5px;
+  }
+  #header-content .container #traverse-type button #arrow {
+    transition: var(--transition);
+  }
+  #header-content .container #traverse-type button .selected {
+    transform: rotate(180deg);
+  }
+  #header-content .container ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 47px;
+    background-color: green;
+    border-radius: 5%;
+    margin-left: 103px;
+  }
+  #header-content .container ul .option-button {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+#matrix-container {
+  height: 75vh;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+}
+#matrix-container .matrix-and-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#matrix-container .matrix-and-buttons .buttons-container {
+  display: flex;
+  flex-direction: inherit;
+  margin: 10px;
+}
+#matrix-container .matrix-and-buttons button {
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+#matrix-container .matrix-and-buttons .matrix-and-center-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Matrix */
+.matrix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+.matrix .row {
+  display: flex;
+}
+.matrix .row .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 15px;
+  background-color: white;
+}
+.matrix .row .cell span {
+  display: block;
+  position: absolute;
+}
+
+#main-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-btn-container .main-button {
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  padding: 8px;
+  border-radius: 5%;
+  margin: 5px;
+  cursor: pointer;
+}
+#main-btn-container .main-button:hover {
+  background-color: #026802;
+}
+#main-btn-container .traversing {
+  background-color: #026802;
+  cursor: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

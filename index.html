@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Matrix Traverse</title>
+</head>
+<body id="main-content">
+    <header id="header-content">
+        <div class="container">
+            <div id="traverse-type">
+                <span>traverse-type: </span>
+                <button class="option-button">
+                    <span>vertical</span>
+                    <i class="fas fa-chevron-up" id="arrow"></i>
+                </button>
+            </div>
+            <ul id="traverse-options">
+                <li><button class="option-button current">vertical</button></li>
+                <li><button class="option-button">horizontal</button></li>
+                <li><button class="option-button">spiral</button></li>
+                <li><button class="option-button">zigzag</button></li>
+            </ul>
+        </div>
+    </header>
+    <div id="matrix-container"></div>
+    <div id="main-btn-container">
+        <button class="main-button" id="play-button">Traverse</button>
+        <button class="main-button" id="renew-button">Renew</button>
+    </div>
+    
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
