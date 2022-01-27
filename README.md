@@ -14,4 +14,4 @@ Enjoy building and traversing your own matrix! You can use traverse methods like
 **Zigzag Traverse** 
 
 
-Interact with the app on: https://nicholas-01.github.io/matrix-traverse/
+Interact with the app on: https://nahuel-nicolas.github.io/matrix-traverse/
